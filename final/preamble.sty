@@ -1,0 +1,69 @@
+% useful base packages
+\ProvidesPackage{preamble}
+\RequirePackage{algorithm}
+\RequirePackage{algpseudocode}
+\RequirePackage{amsmath}
+\RequirePackage{amssymb}
+\RequirePackage{array}
+\RequirePackage{bbm}
+\RequirePackage{enumitem}
+\RequirePackage{fancyhdr}
+\RequirePackage{float}
+\RequirePackage[hang,bottom,flushmargin]{footmisc}
+\RequirePackage{geometry}
+\RequirePackage{graphicx}
+\RequirePackage{hyperref}
+\RequirePackage{lastpage}
+\RequirePackage[dvipsnames]{xcolor}
+\RequirePackage{subcaption}
+\RequirePackage{python}
+\RequirePackage[backend=biber,style=ieee]{biblatex}
+\addbibresource{final.bib}
+\RequirePackage{titlesec}
+
+% column headers
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+
+% useful macros
+\newcommand{\setfontsize}[1]{\fontsize{#1}{#1}\selectfont}
+\newcommand{\algorithmautorefname}{Algorithm}
+
+% section titles
+\titleformat{\section}{\setfontsize{14}\bf}{\color{purple}\thesection}{1em}{}
+\titleformat{\subsection}{\setfontsize{13}\bf}{\color{purple}\thesubsection}{1em}{}
+
+% algopseudocode
+\algrenewcommand{\algorithmiccomment}[1]{
+  {\hfill\footnotesize\tt\color{ForestGreen!80!Black} //\ #1}
+}
+
+% stylistic settings for \LaTeX listings
+\lstset{
+  style=python-syntax,
+  captionpos=b
+}
+
+% useful general settings
+\geometry{
+  margin={1in},
+}
+\captionsetup{
+  labelfont={bf},
+  labelsep={period},
+  justification={centering},
+}
+\hypersetup{
+  colorlinks,
+  linkcolor={purple!80!black},
+  citecolor={green!50!black},
+  urlcolor={blue!80!black},
+}
+
+% personal custom header
+\newcommand{\header}[3]{
+  \pagestyle{fancy}
+  \lhead{#1}
+  \chead{#2}
+  \rhead{#3}
+  \cfoot{\thepage\ / \pageref{LastPage}}
+}

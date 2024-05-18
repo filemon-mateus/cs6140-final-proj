@@ -1,0 +1,178 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global}
+    \entry{blum2020foundations}{book}{}
+      \name{author}{3}{}{%
+        {{hash=c348e11a9e7f34b17b0811660fa01649}{%
+           family={Blum},
+           familyi={B\bibinitperiod},
+           given={Avrim},
+           giveni={A\bibinitperiod}}}%
+        {{hash=a8813c6fc67d61735e9349b0c2b8d89f}{%
+           family={Hopcroft},
+           familyi={H\bibinitperiod},
+           given={John},
+           giveni={J\bibinitperiod}}}%
+        {{hash=a03ceeabae250c6ea8708e78c5071bdc}{%
+           family={Kannan},
+           familyi={K\bibinitperiod},
+           given={Ravi},
+           giveni={R\bibinitperiod}}}%
+      }
+      \list{location}{1}{%
+        {Cambridge}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{293d27f6dd0d6a527060fdb17a8c1487}
+      \strng{fullhash}{293d27f6dd0d6a527060fdb17a8c1487}
+      \strng{bibnamehash}{293d27f6dd0d6a527060fdb17a8c1487}
+      \strng{authorbibnamehash}{293d27f6dd0d6a527060fdb17a8c1487}
+      \strng{authornamehash}{293d27f6dd0d6a527060fdb17a8c1487}
+      \strng{authorfullhash}{293d27f6dd0d6a527060fdb17a8c1487}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9781108485067}
+      \field{title}{Foundations of Data Science}
+      \field{year}{2020}
+      \verb{doi}
+      \verb DOI:
+      \endverb
+      \verb{urlraw}
+      \verb https://www.cambridge.org/core/books/foundations-of-data-science/6A43CE830DE83BED6CC5171E62B0AA9E
+      \endverb
+      \verb{url}
+      \verb https://www.cambridge.org/core/books/foundations-of-data-science/6A43CE830DE83BED6CC5171E62B0AA9E
+      \endverb
+      \keyw{book machine-learning microsoft}
+    \endentry
+    \entry{ng_k-means}{unpublished}{}
+      \name{author}{1}{}{%
+        {{hash=bdb4d740fc9548d1c32a62103c30169d}{%
+           family={Ng},
+           familyi={N\bibinitperiod},
+           given={Andrew},
+           giveni={A\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Stanford University}%
+      }
+      \strng{namehash}{bdb4d740fc9548d1c32a62103c30169d}
+      \strng{fullhash}{bdb4d740fc9548d1c32a62103c30169d}
+      \strng{bibnamehash}{bdb4d740fc9548d1c32a62103c30169d}
+      \strng{authorbibnamehash}{bdb4d740fc9548d1c32a62103c30169d}
+      \strng{authornamehash}{bdb4d740fc9548d1c32a62103c30169d}
+      \strng{authorfullhash}{bdb4d740fc9548d1c32a62103c30169d}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{The $k$-means clustering algorithm}
+      \field{year}{2012}
+      \verb{urlraw}
+      \verb https://cs229.stanford.edu/notes2020spring/cs229-notes7a.pdf
+      \endverb
+      \verb{url}
+      \verb https://cs229.stanford.edu/notes2020spring/cs229-notes7a.pdf
+      \endverb
+    \endentry
+    \entry{phillips2021mathematical}{book}{}
+      \name{author}{1}{}{%
+        {{hash=4a3f6e76f26c09893c588b0fab3daa07}{%
+           family={Phillips},
+           familyi={P\bibinitperiod},
+           given={J.M.},
+           giveni={J\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer International Publishing}%
+      }
+      \strng{namehash}{4a3f6e76f26c09893c588b0fab3daa07}
+      \strng{fullhash}{4a3f6e76f26c09893c588b0fab3daa07}
+      \strng{bibnamehash}{4a3f6e76f26c09893c588b0fab3daa07}
+      \strng{authorbibnamehash}{4a3f6e76f26c09893c588b0fab3daa07}
+      \strng{authornamehash}{4a3f6e76f26c09893c588b0fab3daa07}
+      \strng{authorfullhash}{4a3f6e76f26c09893c588b0fab3daa07}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{isbn}{9783030623401}
+      \field{series}{Springer Series in the Data Sciences}
+      \field{title}{Mathematical Foundations for Data Analysis}
+      \field{year}{2021}
+      \verb{urlraw}
+      \verb https://books.google.com/books?id=AUDYzQEACAAJ
+      \endverb
+      \verb{url}
+      \verb https://books.google.com/books?id=AUDYzQEACAAJ
+      \endverb
+    \endentry
+    \entry{leskovec2014mining}{book}{}
+      \name{author}{3}{}{%
+        {{hash=900d107125ff0ca84698cb909e4f6c51}{%
+           family={Leskovec},
+           familyi={L\bibinitperiod},
+           given={Jure},
+           giveni={J\bibinitperiod}}}%
+        {{hash=45500b3dfad3d2cf0ce07cd00149af68}{%
+           family={Rajaraman},
+           familyi={R\bibinitperiod},
+           given={Anand},
+           giveni={A\bibinitperiod}}}%
+        {{hash=cafe1d770c56825ebccdb81e9f7c9b3b}{%
+           family={Ullman},
+           familyi={U\bibinitperiod},
+           given={Jeffrey\bibnamedelima D.},
+           giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Cambridge University Press}%
+      }
+      \strng{namehash}{908fe1724df35af8b8071b559533f902}
+      \strng{fullhash}{908fe1724df35af8b8071b559533f902}
+      \strng{bibnamehash}{908fe1724df35af8b8071b559533f902}
+      \strng{authorbibnamehash}{908fe1724df35af8b8071b559533f902}
+      \strng{authornamehash}{908fe1724df35af8b8071b559533f902}
+      \strng{authorfullhash}{908fe1724df35af8b8071b559533f902}
+      \field{sortinit}{4}
+      \field{sortinithash}{9381316451d1b9788675a07e972a12a7}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{Second}
+      \field{isbn}{9781316147313 1316147312 9781139924801 113992480X 9781316147047 1316147045 1107077230 9781107077232}
+      \field{title}{Mining of Massive Datasets}
+      \field{year}{2014}
+      \verb{urlraw}
+      \verb http://mmds.org
+      \endverb
+      \verb{url}
+      \verb http://mmds.org
+      \endverb
+      \keyw{approximation bigdata bigdataseminar}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

@@ -1,0 +1,184 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{python}[
+  2023/01/12
+  Python Syntax Highlighting for LaTeX Listings.
+  Provided by Filemon Mateus <filemon@cs.utah.edu>
+]
+\RequirePackage{listings}
+\RequirePackage{fontspec}
+\RequirePackage{xcolor}
+
+\definecolor{RED}{HTML}{d70000}
+\definecolor{GRAY}{HTML}{9f9f9f}
+\definecolor{PURPLE}{HTML}{8700af}
+\definecolor{GREEN}{HTML}{008700}
+\definecolor{OLIVE}{HTML}{5f8700}
+\definecolor{BLUE}{HTML}{005f87}
+\definecolor{PINK}{HTML}{d70087}
+\definecolor{ORANGE}{HTML}{af5f00}
+
+\newfontfamily\iosevka[
+  UprightFont={*},
+  ItalicFont={*Italic},
+  BoldFont={*SemiBold},
+  BoldItalicFont={*SemiBoldItalic},
+  CharacterVariant={85:7,93:1},
+  StylisticSet={8},
+]{Iosevka}
+
+\lstdefinestyle{python-syntax}{
+  language=python,
+  stringstyle=\color{OLIVE},
+  otherkeywords={
+    @,match,case,njit
+  },
+  keywordstyle=\color{PURPLE}\bfseries,
+  emph={
+    [1]
+    break,class,continue,def,yield,del,global,lambda,pass,
+    raise,return,assert,with,import,from,as
+  },
+  emphstyle=[1]\color{PINK},
+  emph={
+    [2]
+    True,False
+  },
+  emphstyle=[2]\color{GREEN}\bfseries,
+  emph={
+    [3]
+    type,isinstance,copy,deepcopy,zip,enumerate,reversed,
+    len,xrange,append,execfile,real,imag,_reduce,repr,print,
+    range,complex,memoryview,help,exec,prange,reduce
+  },
+  emphstyle=[3]\color{BLUE},
+  emph={
+    [4]
+    object,list,set,dict,tuple,str,int,float,bool,bytes,
+    bytearray,frozenset,tensor,func
+  },
+  emphstyle=[4]\color{BLUE}\bfseries,
+  emph={
+    [5]
+    Exception,NameError,IndexError,SyntaxError,TypeError,
+    ValueError,OverflowError,ZeroDivisionError
+  },
+  emphstyle=[5]\color{ORANGE},
+  emph={
+    [6]
+    ode,fsolve,sqrt,exp,sin,cos,arctan,arctan2,arccos,
+    pi,array,norm,solve,dot,arange,isscalar,max,sum,
+    flatten,shape,reshape,find,any,all,abs,plot,linspace,
+    legend,quad,polyval,polyfit,hstack,concatenate,vstack,
+    column_stack,empty,zeros,ones,rand,vander,grid,pcolor,
+    eig,eigs,eigvals,svd,qr,tan,det,logspace,roll,min,
+    mean,cumsum,cumprod,diff,vectorize,lstsq,cla,eye,
+    xlabel,ylabel,squeeze,add_argument,add_parser,
+    ArgumentParser,add_subparsers,seed,randint,(,),
+    CountVectorizer,generalized_set_similarity_measure,
+    positive_int,read_docfile,build_ngrams,jaccard_similarity,
+    rand_salt,hash_fns,minhash_signature,similarity_minhash,
+    main,apply,exit,to_csv,DataFrame,power,random_uniform,
+    random_normal,normalize,log,angular_similarity,split,
+    splitlines,combinations,load_dataset,fromiter,starmap,
+    fromfile,hierarchical,s_link,c_link,dist_mat,
+    save_dendrogram,tight_layout,savefig,center_dists,
+    kcenter_cost,kmeans_cost,max_dist_point,gonzalez,
+    query_labels,kplusplus,square,choice,lloyd,KMeans,fit,
+    hierarchical,AgglomerativeClustering,kmedians_cost,kmedians,
+    simulate,median,read_file,find_item,find_zero,fast_misra_gries,
+    rand_salts,hash_func,count_min,query_min,items,build_trans_matrix,
+    power_iteration,simulation,set_seed,update_ranks,replace,
+    argmax,repeat,get,generate_vector_stripes,map_reduce,where,
+    hsplit
+  },
+  emphstyle=[6]\color{BLUE},
+  emph={
+    [7]
+    __init__,__add__,__mul__,__div__,__sub__,__call__,
+    __getitem__,__setitem__,__eq__,__ne__,__nonzero__,
+    __rmul__,__radd__,__repr__, __str__,__get__,__truediv__,
+    __pow__,__name__,__future__,__all__
+  },
+  emphstyle=[7]\color{RED},
+  emph={
+    [8]
+    @,None,SUPPRESS
+  },
+  emphstyle=[8]\color{ORANGE},
+  emph={
+    [9]
+    njit
+  },
+  emphstyle=[9]\color{PURPLE},
+  morecomment=[s][\color{OLIVE}]{"""}{"""},
+  morecomment=[s][\color{OLIVE}]{'''}{'''},
+  commentstyle=\em\color{GRAY},
+  showstringspaces=false,
+  numberstyle=\iosevka\scriptsize\color{GRAY},
+  numbers=left,
+  frame=single,
+  xleftmargin=25pt,
+  xrightmargin=3pt,
+  framexleftmargin=20pt,
+  basicstyle=\iosevka\small,
+  basewidth=0.5em,
+  columns=fixed,
+  literate=*
+    {,}{{\textcolor{BLUE},}}{1}
+    {:}{{\textcolor{PURPLE}:}}{1}
+    {=}{{\textcolor{PURPLE}=}}{1}
+    {-}{{\textcolor{PURPLE}-}}{1}
+    {+}{{\textcolor{PURPLE}+}}{1}
+    {*}{{\textcolor{PURPLE}*}}{1}
+    {/}{{\textcolor{PURPLE}/}}{1}
+    {!}{{\textcolor{PURPLE}!}}{1}
+    {<}{{\textcolor{PURPLE}<}}{1}
+    {>}{{\textcolor{PURPLE}>}}{1}
+    {^}{{\textcolor{PURPLE}\textasciicircum}}{1}
+    {(}{{\textcolor{BLUE}(}}{1}
+    {)}{{\textcolor{BLUE})}}{1}
+    {[}{{\textcolor{PURPLE}[}}{1}
+    {]}{{\textcolor{PURPLE}]}}{1}
+    {\{}{{\textcolor{PURPLE}\{}}{1}
+    {\}}{{\textcolor{PURPLE}\}}}{1}
+    {0}{{\textcolor{ORANGE}0}}{1}
+    {1}{{\textcolor{ORANGE}1}}{1}
+    {2}{{\textcolor{ORANGE}2}}{1}
+    {3}{{\textcolor{ORANGE}3}}{1}
+    {4}{{\textcolor{ORANGE}4}}{1}
+    {5}{{\textcolor{ORANGE}5}}{1}
+    {6}{{\textcolor{ORANGE}6}}{1}
+    {7}{{\textcolor{ORANGE}7}}{1}
+    {8}{{\textcolor{ORANGE}8}}{1}
+    {9}{{\textcolor{ORANGE}9}}{1}
+    {0.}{{\textcolor{ORANGE}{0.}}}{2}
+    {1.}{{\textcolor{ORANGE}{1.}}}{2}
+    {2.}{{\textcolor{ORANGE}{2.}}}{2}
+    {3.}{{\textcolor{ORANGE}{3.}}}{2}
+    {4.}{{\textcolor{ORANGE}{4.}}}{2}
+    {5.}{{\textcolor{ORANGE}{5.}}}{2}
+    {6.}{{\textcolor{ORANGE}{6.}}}{2}
+    {7.}{{\textcolor{ORANGE}{7.}}}{2}
+    {8.}{{\textcolor{ORANGE}{8.}}}{2}
+    {9.}{{\textcolor{ORANGE}{9.}}}{2}
+    {**}{{\textcolor{PURPLE}{**}}}{2}
+    {//}{{\textcolor{PURPLE}{//}}}{2}
+    {+=}{{\textcolor{PURPLE}{+=}}}{2}
+    {-=}{{\textcolor{PURPLE}{-=}}}{2}
+    {*=}{{\textcolor{PURPLE}{*=}}}{2}
+    {/=}{{\textcolor{PURPLE}{/=}}}{2}
+    {|=}{{\textcolor{PURPLE}{|=}}}{2}
+    {==}{{\textcolor{PURPLE}{==}}}{2}
+    {!=}{{\textcolor{PURPLE}{!=}}}{2}
+    {>=}{{\textcolor{PURPLE}{>=}}}{2}
+    {<=}{{\textcolor{PURPLE}{<=}}}{2}
+    {:=}{{\textcolor{PURPLE}{:=}}}{2}
+    {>>}{{\textcolor{PURPLE}{>>}}}{2}
+    {<<}{{\textcolor{PURPLE}{<<}}}{2}
+    {<-}{{\textcolor{PURPLE}{<-}}}{2}
+    {->}{{\textcolor{PURPLE}{->}}}{2}
+    {\&=}{{\textcolor{PURPLE}{\&=}}}{2}
+    {\%=}{{\textcolor{PURPLE}{\%=}}}{2}
+    {\ mapper(}{{\textcolor{BLUE}{\iosevka{\char32}mapper\iosevka{\char40}}}}{8}
+    {\ reducer(}{{\textcolor{BLUE}{\iosevka{\char32}reducer\iosevka{\char40}}}}{9}
+}
